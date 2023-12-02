@@ -4,10 +4,6 @@ import { NavbarBrand } from "./NavbarBrand";
 import { NavMenu } from "./NavMenu";
 
 export const NavBar = () => {
-  // const style = {
-
-  // }
-
   return (
     <Box
       width={"100%"}
@@ -15,7 +11,7 @@ export const NavBar = () => {
       alignItems={"center"}
       justifyContent={"space-between"}
       height={"50px"}
-        gap={"25px"}
+      gap={"25px"}
     >
       <NavbarBrand />
       <NavMenu />
