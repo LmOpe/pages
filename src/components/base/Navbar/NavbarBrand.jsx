@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faLinkedin, faXTwitter} from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faXTwitter} from '@fortawesome/free-solid-svg-icons';
 import favicon from "../../../assets/Logo.svg";
 
 import "../../utilities/base.css";
@@ -10,10 +10,21 @@ import "../../utilities/base.css";
 export const NavbarBrand = () => {
 
   const social_data = [
-    {'icon': faFacebookF},
-    {'icon': faLinkedin},
-    {'icon': faXTwitter}
+    {'icon': faGithub,
+    'link': 'https://github.com/LmOpe'},
+    {'icon': faLinkedin,
+      'link': 'www.linkedin.com/in/lawal-muhammed-1b147a12b'},
+    {'icon': faXTwitter, 
+    'link': 'https://twitter.com/lmo_ope'}
   ]
+
+  const socials = social_data.map((data) =>{
+    return(
+      <li >
+
+      </li>
+    )
+  })
 
   return (
     <Box
