@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --primary: #1b3764;
+  --secondary: #ffca42;
+  --light-blue: #f6f8fc;
+}
+
+.font-cardo {
+  font-family: "Cardo", serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.primary-bg {
+  background-color: var(--primary);
+}
+
+.secondary-bg {
+  background-color: var(--secondary);
+}
+
+.light-blue-bg {
+  background-color: var(--light-blue);
+}
+
+.primary-font {
+  color: white;
+}
+
+.secondary-font {
+  color: var(--secondary);
+}
+
+.light-blue-font {
+  color: var(--light-blue);
+}
