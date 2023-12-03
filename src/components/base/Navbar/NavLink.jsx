@@ -1,9 +1,37 @@
-import React from 'react'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-export const NavLink = () => {
+import { navLinks } from "../../../data/navbarlinks";
+
+export const NavigationLink = () => {
+  const navLink = navLinks.map((link) => {
+    return (
+      <NavLink
+        style={{
+          textDecoration: "none",
+          fontSize: "17px",
+          fontWeight: 500,
+          lineHeight: "125%",
+        }}
+        to={link.link}
+        className={"font-inter primary-font"}
+        key={link.link}
+      >
+        {link.content}
+      </NavLink>
+    );
+  });
   return (
-    <ul className='font-inter primary-font'>
-
+    <ul
+      style={{
+        width: "469px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-end",
+        gap: "30px",
+      }}
+    >
+      {navLink}
     </ul>
-  )
-}
+  );
+};
