@@ -7,6 +7,6 @@ const formattedCount = count.toLocaleString('en-US', {
 })
 
 export const CartContext = createContext({
-    count: 0,
+    count: formattedCount,
     setCount: () => {}
 });

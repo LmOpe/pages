@@ -1,0 +1,13 @@
+.nav-menu {
+  transition: outline-offset 200ms ease, background-color 500ms ease;
+}
+.nav-menu:hover {
+  background-color: #8775ff;
+}
+
+.nav-menu:focus,
+.nav-menu:active {
+  outline: 2px solid #f6f8fc;
+  border-radius: 5px;
+  outline-offset: 3px;
+}

@@ -6,7 +6,12 @@ import "./header.css";
 import { NavBar } from "./Navbar/NavBar";
 import { CartContext } from "../../contexts/CartContext";
 export const Header = ({ children }) => {
-  const [count, setCount] = useState(0);
+  const num = 0;
+  const formattedCount = num.toLocaleString("en-US", {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  });
+  const [count, setCount] = useState(formattedCount);
   const value = { count, setCount };
   return (
     <Box

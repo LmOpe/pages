@@ -4,9 +4,9 @@ import { Box } from "@mui/material";
 import { NavigationLink } from "./NavLink";
 import { Cart } from "./Cart";
 import { NavButton } from "../../utilities/Button";
-
+import "./navMenu.css";
 export const NavMenu = () => {
-  const className = "secondary-bg blue-font font-cardo";
+  const className = "secondary-bg nav-menu blue-font font-cardo";
   const styles = {
     padding: "13px 33px",
     fontSize: "19px",
@@ -31,7 +31,9 @@ export const NavMenu = () => {
         <NavigationLink />
         <Cart />
       </Box>
-      <NavButton styles={styles} className={className}>Order Today</NavButton>
+      <NavButton styles={styles} className={className}>
+        Order Today
+      </NavButton>
     </Box>
   );
 };

@@ -1,0 +1,26 @@
+.navLink-hover:hover::after{
+    content: '';
+    width: 80%;
+    background-color: #ffca42;
+    height: 3px;
+    border-radius: 1px;
+    display: block;
+    animation: 1s slidein;
+    transition: all ease-in cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.navLink-hover:focus,
+.navLink-hover.active
+{
+    color: #ffca42;
+}
+
+@keyframes slidein {
+    from {
+        width: 0px;
+    }
+
+    to{
+        width: 80%;
+    }
+}

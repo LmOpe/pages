@@ -1,7 +1,9 @@
-import React from "react";
+import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { navLinks } from "../../../data/navbarlinks";
+
+import "./navLink.css";
 
 export const NavigationLink = () => {
   const navLink = navLinks.map((link) => {
@@ -14,7 +16,7 @@ export const NavigationLink = () => {
           lineHeight: "125%",
         }}
         to={link.link}
-        className={"font-inter primary-font"}
+        className={"font-inter primary-font navLink-hover"}
         key={link.link}
       >
         {link.content}
