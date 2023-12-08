@@ -25,7 +25,6 @@ export const NavbarBrand = () => {
 
   return (
     <Box
-      width={"306px"}
       height={"45px"}
       display={"flex"}
       alignItems={"center"}

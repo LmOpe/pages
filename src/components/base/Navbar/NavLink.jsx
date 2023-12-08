@@ -26,10 +26,9 @@ export const NavigationLink = () => {
   return (
     <ul
       style={{
-        width: "469px",
         display: "flex",
         alignItems: "center",
-        justifyContent: "flex-end",
+        justifyContent: "space-between",
         gap: "30px",
       }}
     >

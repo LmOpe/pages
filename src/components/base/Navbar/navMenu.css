@@ -11,3 +11,7 @@
   border-radius: 5px;
   outline-offset: 3px;
 }
+
+.free-demo:hover {
+  color: #dad4ff;
+}

@@ -16,14 +16,12 @@ export const NavMenu = () => {
   return (
     <Box
       display={"flex"}
-      width={"742px"}
       justifyContent={"space-between"}
       alignItems={"center"}
       gap={"30px"}
     >
       <Box
         display={"flex"}
-        width={"532px"}
         alignItems={"center"}
         justifyContent={"space-between"}
         gap={"26px"}

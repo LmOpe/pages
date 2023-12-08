@@ -2,7 +2,6 @@ import { React, useContext, useState } from "react";
 import { Box } from "@mui/material";
 
 import "../utilities/base.css";
-import "./header.css";
 import { NavBar } from "./Navbar/NavBar";
 import { CartContext } from "../../contexts/CartContext";
 export const Header = ({ children }) => {
@@ -16,19 +15,19 @@ export const Header = ({ children }) => {
   return (
     <Box
       display={"flex"}
-      height={"100vh"}
       flexDirection={"column"}
       justifyContent={"space-between"}
       alignItems={"center"}
       width={"100vw"}
-      gap={"95px"}
-      padding={"50px"}
+      maxWidth={'1920px'}
+      gap={"1.5rem"}
+      padding={"3% 8% 5% 8%"}
       className="primary-bg"
       component="header"
     >
       <CartContext.Provider value={value}>
         <NavBar />
-        <Box>{children}</Box>
+        {children}
       </CartContext.Provider>
     </Box>
   );
