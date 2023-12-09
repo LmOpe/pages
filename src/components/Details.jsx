@@ -6,8 +6,8 @@ import './utilities/base.css';
 export const Details = () => {
   const details = [
     { "title": "Pages:", 'content': '586pages'},
-    { 'title': "Length", 'content': "10 Hours" },
-    { 'title': 'Ratings', 'content': "4.5/5 (305 ratings)" },
+    { 'title': "Length:", 'content': "10 Hours" },
+    { 'title': 'Ratings:', 'content': "4.5/5 (305 ratings)" },
   ];
 
   const details_component = details.map(detail =>{
@@ -16,6 +16,7 @@ export const Details = () => {
         display={'flex'}
         alignItems={'flex-start'}
         gap={'8px'}
+        key={detail.title}
         >
             <Box
             width={'12px'}
@@ -41,6 +42,9 @@ export const Details = () => {
             fontWeight={400}
             fontSize={'18px'}
             lineHeight={'170%'}
+            style={{
+              textWrap: 'nowrap'
+            }}
             >
                 {detail.content}
             </Box>

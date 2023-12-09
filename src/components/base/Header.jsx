@@ -20,8 +20,8 @@ export const Header = ({ children }) => {
       alignItems={"center"}
       width={"100vw"}
       maxWidth={'1920px'}
-      gap={"1.5rem"}
-      padding={"3% 8% 5% 8%"}
+      gap={"2.5rem"}
+      padding={"3% 6% 5% 6%"}
       className="primary-bg"
       component="header"
     >
