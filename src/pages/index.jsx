@@ -7,6 +7,7 @@ import "../components/utilities/base.css";
 import "../components/base/Navbar/navMenu.css";
 
 import { NavButton } from "../components/utilities/Button";
+import { Details } from "../components/Details";
 export const Homepage = () => {
   const className = "secondary-bg nav-menu blue-font font-cardo";
   const styles = {
@@ -65,8 +66,8 @@ export const Homepage = () => {
             display={"flex"}
             flexDirection={"column"}
             gap={"49px"}
-            alignItems={"center"}
-            justifyContent={"flex-start"}
+            alignItems={"flex-start"}
+            justifyContent={"center"}
           >
             <Box
               display={"flex"}
@@ -79,8 +80,7 @@ export const Homepage = () => {
                 Books are uniquely portable magic
               </Box>
               <Box
-                className="font-Inter"
-                color={"#B4C7E7"}
+                className="font-Inter mid-blue-font"
                 fontSize={"19px"}
                 fontWeight={400}
                 lineHeight={"180%"}
@@ -119,9 +119,7 @@ export const Homepage = () => {
             ></Box>
             </NavButton>
             </Box>
-            <Box>
-
-            </Box>
+            <Details />
           </Box>
         </Box>
         <Box

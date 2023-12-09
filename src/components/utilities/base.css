@@ -5,6 +5,7 @@
   --primary: #1b3764;
   --secondary: #ffca42;
   --light-blue: #f6f8fc;
+  --mid-blue: #B4C7E7;
 }
 
 .font-cardo {
@@ -37,4 +38,8 @@
 
 .blue-font {
   color: var(--primary);
+}
+
+.mid-blue-font {
+  color: var(--mid-blue);
 }
